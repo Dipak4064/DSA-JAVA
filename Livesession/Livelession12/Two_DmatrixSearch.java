@@ -1,4 +1,4 @@
-package Lession12.Livelession;
+package Livesession.LiveLession12;
 
 public class Two_DmatrixSearch {
     public static void main(String[] args) {
