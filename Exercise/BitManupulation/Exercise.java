@@ -1,3 +1,4 @@
+package Exercise.BitManupulation;
 public class Exercise {
     //question 1 
     // the answer is 0 because the x^x =0 and x^0 = x when we use xor operation
@@ -56,7 +57,7 @@ public class Exercise {
 
     public static void main(String[] args) {
         // chnageValue(5,10);
-        // addOne(5);
+        addOne(5);
         // characterCaseConversion();
         
     }
