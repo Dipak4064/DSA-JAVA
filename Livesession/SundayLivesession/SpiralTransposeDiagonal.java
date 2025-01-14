@@ -1,6 +1,6 @@
 package Livesession.SundayLivesession;
 
-public class spiralMatrix {
+public class SpiralTransposeDiagonal {
     //spiral matrix searching
     public static void printSpiralMatrix(int[][] matrix){
         int n=matrix.length;
@@ -74,6 +74,48 @@ public class spiralMatrix {
         System.out.println();
     }
     }
+
+    //Diagonal Traverse
+    public static void DiagonalTraverse(int[][] matrix){
+        int row = matrix.length;
+        int col = matrix[0].length;
+        int mr=0,nc=0;
+        int[] ans = new int[row*col];
+        int idx =0;
+        boolean up = true;
+        while(mr < row && nc < col){
+            if(up == true){
+                while(mr>0 && nc<col-1){
+                    ans[idx++]=matrix[mr][nc];
+                    nc++;
+                    mr--;
+                }
+                ans[idx++]=matrix[mr][nc];
+                if(nc==col-1){
+                    mr++;
+                }else{
+                    nc++;
+                }
+            }else{
+                while(mr<row-1 && nc>0){
+                    ans[idx++]=matrix[mr][nc];
+                    nc--;
+                    mr++;
+                }
+                ans[idx++]=matrix[mr][nc];
+                if(mr==row-1){
+                    nc++;
+                }else{
+                    mr++;
+                }
+
+            }
+            up = !up;
+        }
+        for(int i=0;i<ans.length;i++){
+            System.out.print(ans[i]+",");
+        }
+    }
     public static void main(String[] args) {
          int[][] matrix ={
             {1,6,11,14,21},
@@ -82,7 +124,15 @@ public class spiralMatrix {
             {4,9,17,19,24},
             {5,10,20,18,23}
          };
+         int [][] matrix1 ={
+            {1,2,5,7},
+            {4,10,23,37},
+            {40,8,9,11},
+            {15,17,19,20}
+         };
         //  printSpiralMatrix(matrix);
-         transposeMatrix(matrix);
+        //  transposeMatrix(matrix);
+        DiagonalTraverse(matrix1);
+
     }
 }
