@@ -1,3 +1,4 @@
+package Array.Array_II.D_Sub_Arrays;
 public class optimized_sumofSubArray {
 	// Time & space complexcity O(n^3)
 	public static void bruteforce1(int num[]) {
