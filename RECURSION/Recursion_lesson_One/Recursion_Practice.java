@@ -1,5 +1,4 @@
 
-
 public class Recursion_Practice {
 
     public static void Decreasing(int n) {
@@ -73,12 +72,26 @@ public class Recursion_Practice {
         }
         return lastOccurence(arr, key, i - 1);
     }
+
     //Find the power of N By using the recursion
     public static int Power(int x, int n) {
         if (n == 0) {
             return 1;
         }
         return x * Power(x, n - 1);
+    }
+
+    //Optimized Power of N
+    public static int OptimizedPower(int x, int n) {
+        if (n == 0) {
+            return 1;
+        }
+        int halfpower = OptimizedPower(x, n / 2);
+        int fullpower = halfpower * halfpower;
+        if (n % 2 != 0) {
+            return x * halfpower * halfpower;
+        }
+        return fullpower;
     }
 
     public static void main(String[] args) {
@@ -93,7 +106,8 @@ public class Recursion_Practice {
         // int arr[] = {8, 3, 6, 9, 5, 10, 2, 5, 3};
         // System.out.println(firstOccurence(arr, 5, 0));
         // System.out.println(lastOccurence(arr, 5, arr.length-1));
-        System.out.println(Power(2, 5));
+        // System.out.println(Power(2, 5));
+        System.out.println(OptimizedPower(2, 5));
     }
 
 }
