@@ -35,20 +35,15 @@ public class Exercise {
     }
 
     //Question4:We are given a string S, we need to find the count of all contiguous substrings starting and ending with the same character
-    public static int countSubstrings(String str, int i, int j) {
-        if (i == str.length()) {
-            return 0;
+    public static int countSubstrings(String str, int i, int j, int n) {
+        if (n <= 1) {
+            return n;
         }
-        if (j == str.length()) {
-            return countSubstrings(str, i + 1, i + 1);
-        }
-        int count = 0;
+        int res = countSubstrings(str, i + 1, j, n - 1) + countSubstrings(str, i, j - 1, n - 1) - countSubstrings(str, i + 1, j - 1, n - 2);
         if (str.charAt(i) == str.charAt(j)) {
-            count = 1 + countSubstrings(str, i, j + 1);
-        } else {
-            count = countSubstrings(str, i, j + 1);
+            res++;
         }
-        return count;
+        return res;
     }
 
     public static void main(String[] args) {
@@ -58,7 +53,7 @@ public class Exercise {
         // System.out.println(findLengthOfString("hello", 0));
         String str = "abcab";
         int n = str.length();
-        System.out.println(countSubstrings(str, 0, n));
+        System.out.println(countSubstrings(str, 0, n - 1, n));
 
     }
 }
