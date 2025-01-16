@@ -1,5 +1,3 @@
-package C_ReverseArray;
-
 public class reverseArrrray {
 	public static void reverse(int num[]) {
 		int start = 0;

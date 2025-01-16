@@ -1,4 +1,3 @@
-package Array.Array_II.G_Rotated_sorted_Arrays;
 //Advanced Version of Binary search
 //Rotated sorted Array
 public class Rotated_sorted {
