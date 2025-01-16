@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Exercise",
+            "request": "launch",
+            "mainClass": "Exercise.RECURSION.Exercise",
+            "projectName": "SIGMA_2404186c"
+        }
+    ]
+}

@@ -1,4 +1,4 @@
-package Exercise.OOPSs;
+package Exercise.OOPS;
 
 public class EXercise {
 
@@ -48,7 +48,7 @@ class Complex {
         } else if (img == 0 && real != 0) {
             System.out.println(real);
         } else {
-            System.out.println(real + (img >= 0 ? "+" : "") + img + "i");
+            System.out.println(real + (img >= 0 ? "+" : "-") + img + "i");
         }
     }
 }
