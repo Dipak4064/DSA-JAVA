@@ -68,7 +68,7 @@ public class Exercise {
         // System.out.println(findLengthOfString("hello", 0));
         String str = "abcab";
         int n = str.length();
-        System.out.println(countSubstrings(str, 0, n));
+        System.out.println(countSubstrings(str, 0, n-1));
         // toh(3, 10, 20, 30);
 
     }
