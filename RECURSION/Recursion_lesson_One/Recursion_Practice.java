@@ -89,7 +89,8 @@ public class Recursion_Practice {
         int halfpower = OptimizedPower(x, n / 2);
         int fullpower = halfpower * halfpower;
         if (n % 2 != 0) {
-            return x * halfpower * halfpower;
+            // return x * halfpower * halfpower;
+            return x*OptimizedPower(x, n/2)*OptimizedPower(x, n/2);
         }
         return fullpower;
     }

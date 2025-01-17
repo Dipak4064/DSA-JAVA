@@ -35,15 +35,30 @@ public class Exercise {
     }
 
     //Question4:We are given a string S, we need to find the count of all contiguous substrings starting and ending with the same character
-    public static int countSubstrings(String str, int i, int j, int n) {
-        if (n <= 1) {
-            return n;
+    public static int countSubstrings(String str, int si, int ei) {
+        if (si > ei) {
+            return 0;
         }
-        int res = countSubstrings(str, i + 1, j, n - 1) + countSubstrings(str, i, j - 1, n - 1) - countSubstrings(str, i + 1, j - 1, n - 2);
-        if (str.charAt(i) == str.charAt(j)) {
-            res++;
+        int removingFirst = countSubstrings(str, si + 1, ei);
+        int removingLast = countSubstrings(str, si, ei - 1);
+        int removeDuplicate = countSubstrings(str, si + 1, ei - 1);
+        int ans = removingFirst + removingLast - removeDuplicate;
+        if (str.charAt(si) == str.charAt(ei)) {
+            ans++;
         }
-        return res;
+        return ans;
+    }
+     
+
+    //power of honoi    
+    public static void toh(int n, int A, int B, int C) {
+        if (n == 1) {
+            System.out.println("Move 1 from " + A + " to " + C);
+            return;
+        }
+        toh(n - 1, A, C, B);
+        System.out.println("Move " + n + " from " + A + " to " + C);
+        toh(n - 1, B, A, C);
     }
 
     public static void main(String[] args) {
@@ -53,7 +68,8 @@ public class Exercise {
         // System.out.println(findLengthOfString("hello", 0));
         String str = "abcab";
         int n = str.length();
-        System.out.println(countSubstrings(str, 0, n - 1, n));
+        System.out.println(countSubstrings(str, 0, n));
+        // toh(3, 10, 20, 30);
 
     }
 }

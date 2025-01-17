@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "expo_practice",
+            "request": "launch",
+            "mainClass": "expo_practice",
+            "projectName": "SIGMA_2404186c"
+        },
+        {
+            "type": "java",
             "name": "Exercise",
             "request": "launch",
             "mainClass": "Exercise.RECURSION.Exercise",
