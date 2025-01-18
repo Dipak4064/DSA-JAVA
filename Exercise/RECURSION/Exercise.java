@@ -51,14 +51,13 @@ public class Exercise {
      
 
     //power of honoi    
-    public static void toh(int n, int A, int B, int C) {
-        if (n == 1) {
-            System.out.println("Move 1 from " + A + " to " + C);
+    public static void toh(int n, int A, int C, int B) {
+        if (n == 0) {
             return;
         }
-        toh(n - 1, A, C, B);
+        toh(n - 1, A, B, C);
         System.out.println("Move " + n + " from " + A + " to " + C);
-        toh(n - 1, B, A, C);
+        toh(n - 1, B, C, A);
     }
 
     public static void main(String[] args) {

@@ -40,7 +40,7 @@ public class Recursion_Learning {
     }
 
     /*-------------------------------------------------------------------------------------------- */
-    //friends pairing proble
+    //friends pairing problem
     public static int paringFreinds(int n) {
         if (n <= 2) {
             return n;
