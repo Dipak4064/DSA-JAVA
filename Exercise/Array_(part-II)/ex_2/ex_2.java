@@ -4,6 +4,7 @@ public class ex_2{
 
 	// TC = O(logn)
 	public static int search(int num[], int tar) {
+		//4,5,6,7,0,1,2
 		int end = num.length - 1;
 		int start = 0;
 		while (start <= end) {
