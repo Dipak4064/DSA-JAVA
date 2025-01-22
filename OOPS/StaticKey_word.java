@@ -2,6 +2,7 @@ package OOPS;
 
 public class StaticKey_word {
 
+    /*
     public static void main(String[] args) {
         Student s1 = new Student();
         s1.college = "Bsc.Hons";
@@ -11,7 +12,7 @@ public class StaticKey_word {
         Student s3 = new Student();
         s3.college = "cyber security";
         //all the student object s1, s2, s3 are sharing the college name and pointing to the same stack memory location stack
-    }
+    }*/
 }
 
 class Student {
