@@ -1,4 +1,5 @@
 class string_Permutations{
+    //this code written by other laptop and try to how to update file in other device
     public static void permute(String str, String ans){
         //base case
         if(str.length()==0){
