@@ -56,7 +56,8 @@ public class SpiralTransposeDiagonal {
     */
 
     //using the temp veriable making the matrix Transpose
-    int curr_c=0,curr_r=0;
+    // int curr_c=0;
+    int curr_r=0;
     while(curr_r<row){
         int i=curr_r;
         for(int j=i;j<row;j++){
@@ -65,7 +66,7 @@ public class SpiralTransposeDiagonal {
             matrix[j][i]=temp;
         }
         curr_r++;
-        curr_c++;
+        // curr_c++;
     }
     for(int i=0;i<row;i++){
         for(int j=0;j<col;j++){
@@ -117,13 +118,13 @@ public class SpiralTransposeDiagonal {
         }
     }
     public static void main(String[] args) {
-         int[][] matrix ={
-            {1,6,11,14,21},
-            {2,7,12,15,25},
-            {3,8,13,16,22},
-            {4,9,17,19,24},
-            {5,10,20,18,23}
-         };
+        //  int[][] matrix ={
+        //     {1,6,11,14,21},
+        //     {2,7,12,15,25},
+        //     {3,8,13,16,22},
+        //     {4,9,17,19,24},
+        //     {5,10,20,18,23}
+        //  };
          int [][] matrix1 ={
             {1,2,5,7},
             {4,10,23,37},

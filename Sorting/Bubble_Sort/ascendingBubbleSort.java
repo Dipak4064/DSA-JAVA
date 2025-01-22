@@ -53,7 +53,7 @@ public class ascendingBubbleSort {
 
 	public static void main(String[] args) {
 		int[] num = { 5, 4, 3, 2, 1 };
-		// Bubble_sorting(num);
+		Bubble_sorting(num);
 		// selection_Sorting(num);
 		// insertion_Sorting(num);
 

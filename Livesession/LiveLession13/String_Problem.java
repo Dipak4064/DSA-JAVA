@@ -13,6 +13,7 @@ public static void main(String[] args) {
         if(ch.charAt(i)=='a'||ch.charAt(i)=='e'||ch.charAt(i)=='i'||ch.charAt(i)=='o'||ch.charAt(i)=='u'){
             count++;
     }
+    sc.close();
 }
 System.out.println("The number of vowels in the string is "+count);
 

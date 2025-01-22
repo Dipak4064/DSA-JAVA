@@ -5,9 +5,9 @@ import java.util.Arrays;
 public class lexicoGraphic {
     public static void ascending(String[] str) {
         int n = str.length;
-        String result = "";
+        // String result = "";
 
-        String[] copy = new String[n];
+        // String[] copy = new String[n];
         for (int i = 0; i < n; i++) {
             String min = str[i];
             int minIdx = i;

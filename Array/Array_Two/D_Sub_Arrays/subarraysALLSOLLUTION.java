@@ -1,3 +1,4 @@
+package D_Sub_Arrays;
 public class subarraysALLSOLLUTION {
 	public static void totalsubArray(int num[]) {
 		int n = num.length;

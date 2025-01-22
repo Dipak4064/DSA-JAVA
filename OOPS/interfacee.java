@@ -4,7 +4,7 @@ public class interfacee {
     public static void main(String[] args) {
         
         //interface
-        Queen q = new Queen();
+        // Queen q = new Queen();
         // q.moves();
 
 

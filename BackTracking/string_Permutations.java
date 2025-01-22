@@ -15,7 +15,7 @@ class string_Permutations{
     }
     public static void main(String[] args) {
         String str = "ABC";
-        int n = str.length();
+        // int n = str.length();
         permute(str, "");
     }
 }

@@ -96,12 +96,12 @@ public class spiralMatrix {
 
 	// Search in sorted Array
 	public static void main(String[] args) {
-		int matrix[][] = {
-				{ 1, 2, 3, 3 },
-				{ 4, 5, 6, 6 },
-				{ 7, 8, 9, 9 },
-				{ 10, 11, 12, 12 }
-		};
+		// int matrix[][] = {
+		// 		{ 1, 2, 3, 3 },
+		// 		{ 4, 5, 6, 6 },
+		// 		{ 7, 8, 9, 9 },
+		// 		{ 10, 11, 12, 12 }
+		// };
 		int matrix_1[][] = {
 				{ 10, 20, 30, 40 },
 				{ 15, 25, 35, 45 },

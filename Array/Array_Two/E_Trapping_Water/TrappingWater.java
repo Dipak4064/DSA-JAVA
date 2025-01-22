@@ -1,7 +1,4 @@
 package E_Trapping_Water;
-
-import java.util.*;
-
 public class TrappingWater {
 	public static int traprainWater(int height[]) {
 

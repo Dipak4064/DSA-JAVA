@@ -1,4 +1,3 @@
-package BackTracking;
 public class BT{
     public static void backtrack(int[] arr, int i, int val){
         //base case

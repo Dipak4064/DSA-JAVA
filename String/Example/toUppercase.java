@@ -1,12 +1,12 @@
 package String.Example;
 
-import java.util.*;
+// import java.util.*;
 
 //import static java.lang.StringLatin1.charAt;
 //For a given string covert each the first letter of each word to uppercase
 
 public class toUppercase {
-    public static String toUppercase(String str) {
+    public static String convertToUppercase(String str) {
         StringBuilder sb = new StringBuilder("");
         char ch = Character.toUpperCase(str.charAt(0));
         sb.append(ch);
@@ -24,6 +24,6 @@ public class toUppercase {
 
     public static void main(String[] args) {
         String str = "hi, i am dipak tamang";
-        System.out.println(toUppercase(str));
+        System.out.println(convertToUppercase(str));
     }
 }

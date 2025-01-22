@@ -1,4 +1,4 @@
-package Array.Array_II.D_Sub_Arrays;
+package D_Sub_Arrays;
 public class optimized_sumofSubArray {
 	// Time & space complexcity O(n^3)
 	public static void bruteforce1(int num[]) {
@@ -97,7 +97,7 @@ public class optimized_sumofSubArray {
 	public static void main(String[] args) {
 		int[] num = { 2, 4, 6, 8, 10 };
 		int[] num1 = { -10,-2, -3, -8, -7, -9, -5 };
-		// bruteforce1(num);
+		bruteforce1(num);
 		// bruteforce2(num);
 		// prefix(num);
 		// kadanes(num);

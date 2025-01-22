@@ -1,4 +1,3 @@
-package BackTracking;
 
 public class subset {
 

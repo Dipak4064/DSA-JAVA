@@ -94,8 +94,8 @@ public class Rotated_sorted {
 		int tar2 = 3;
 		int tar3 = 0;
 		System.out.println(search(num, tar));
-		// System.out.println(search(num2, tar2));
-		// System.out.println(search(num3, tar3));
+		System.out.println(search(num2, tar2));
+		System.out.println(search(num3, tar3));
 	}
 
 }

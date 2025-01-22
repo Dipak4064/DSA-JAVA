@@ -19,6 +19,7 @@ public class ex_1 {
         System.out.println("enter the String!");
         str = sc.nextLine();
         System.out.println(countVowel(str));
+        sc.close();
     }
 
 }

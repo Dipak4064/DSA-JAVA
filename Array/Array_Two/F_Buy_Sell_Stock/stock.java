@@ -1,4 +1,4 @@
-package Array_II.F_Buy_Sell_Stock;
+package F_Buy_Sell_Stock;
 public class stock {
 	public static void sellStock(int prices[]) {
 		int max_profit = 0;

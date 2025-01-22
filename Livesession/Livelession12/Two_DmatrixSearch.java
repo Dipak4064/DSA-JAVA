@@ -1,6 +1,7 @@
-package Livesession.LiveLession12;
+package Livesession.Livelession12;
 
 public class Two_DmatrixSearch {
+    /*
     public static void main(String[] args) {
         int[][] matrix = {
             {1, 3, 5, 7,9},
@@ -10,7 +11,7 @@ public class Two_DmatrixSearch {
         };
         int target = 15;
         // System.out.println(searchMatrix(matrix, target));
-    }
+    }*/
 
     //1st Approach
     //Finding the Elemen in matrix by using the LEANER SEARCH
