@@ -56,5 +56,6 @@
   "java.checkstyle.properties": {
     "java.checkstyle.configuration": "C:\\Users\\orraa\\Downloads\\CheckStyle.xml"
   },
-  "java.format.enabled": false
+  "java.format.enabled": false,
+  "java.format.settings.url": "eclipse-formatter.xml"
 }

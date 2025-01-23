@@ -1,4 +1,4 @@
-
+package bineryTrangle;
 public class trangle_Binary {
 	public static void BinaryTrangle(int n) {
 		for (int i = 1; i <= n; i++) {

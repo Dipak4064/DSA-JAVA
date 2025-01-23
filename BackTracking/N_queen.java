@@ -9,7 +9,7 @@ public class N_queen{
     for(int j=0;j<board.length;j++){
     board[row][j] = 'Q';
     NQueen(board,row+1);
-    board[row][j] = '.';
+    board[row][j] = 'x';
     }
     }
     public static void printBoard(char board[][]){
@@ -27,7 +27,7 @@ public static void main(String[] args) {
     //initialize the board with 0
     for(int i=0; i<n; i++){
         for(int j=0; j<n; j++){
-            board[i][j] = '.';
+            board[i][j] = 'X';
         }
     }
     NQueen(board, 0);
