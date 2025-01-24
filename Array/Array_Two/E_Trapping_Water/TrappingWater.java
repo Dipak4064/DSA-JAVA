@@ -1,4 +1,6 @@
+
 package E_Trapping_Water;
+
 public class TrappingWater {
 	public static int traprainWater(int height[]) {
 
