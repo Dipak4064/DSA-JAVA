@@ -21,9 +21,13 @@ public class fullN_queen {
         return true;
     }
 
+    // for find the total number of way to place the queen
+    static int count = 0;
+
     public static void NQueen(char board[][], int row) {
         // base case
         if (row == board.length) {
+            count++;
             printBoard(board);
             return;
         }
@@ -57,5 +61,6 @@ public class fullN_queen {
             }
         }
         NQueen(board, 0);
+        System.out.println("total number of way" + count);
     }
 }
