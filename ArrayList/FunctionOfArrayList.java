@@ -14,24 +14,30 @@ public class FunctionOfArrayList {
         list.add(40);
         list.add(1, 50);
         System.out.println(list);
+
         // get operation
         int element = list.get(1);
         System.out.println(element);
+
         // set operation
         list.set(1, 180);
         System.out.println(list);
+
         // remove operation
         list.remove(1);
         System.out.println(list);
+
         // contain operation
         System.out.println(list.contains(30));
         System.out.println(list.contains(100));
+
         // size operation
         System.out.println(list.size());
         for (int i = 0; i < list.size(); i++) {
             System.out.print(list.get(i) + " ");
         }
         System.out.println();
+
         // printing reverse
         for (int i = list.size() - 1; i >= 0; i--) {
             System.out.print(list.get(i) + " ");
@@ -49,8 +55,6 @@ public class FunctionOfArrayList {
             }
         }
 
-
-
         // swap two elements
         System.out.println(list);
         swap(list, 0, 2);
@@ -63,7 +67,5 @@ public class FunctionOfArrayList {
         int temp = list.get(i);
         list.set(i, list.get(j));
         list.set(j, temp);
-    }
-
-    
+    }    
 }

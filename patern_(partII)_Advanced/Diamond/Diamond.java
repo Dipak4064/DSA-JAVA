@@ -1,3 +1,4 @@
+package Diamond;
 public class Diamond {
 	public static void printDiamond(int n) {
 		for (int i = 1; i <= n; i++) {
