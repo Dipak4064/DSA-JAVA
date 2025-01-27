@@ -1,4 +1,3 @@
-package allAdvancePattern;
 public class pyramid {
 	public static void printPyramid(int n) {
 		for (int i = 1; i < n; i++) {
