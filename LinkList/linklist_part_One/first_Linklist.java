@@ -27,9 +27,9 @@ public class first_Linklist {
             return;
         }
         // step 3:newNode next should point to head
-        tail.next = newNode;
+        head.next = newNode;
         // step 4: update the head
-        tail = newNode;
+        head = newNode;
     }
 
     // performing addLast operation
