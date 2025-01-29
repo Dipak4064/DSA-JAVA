@@ -1,48 +1,59 @@
 package LinkList.linklist_part_Two;
 
-import java.util.LinkedList;
-
-public class LL_mergeSort {
-    class Node {
+class LL_mergeSort {
+    static class Node {
         int data;
         Node next;
-        
+
         Node(int data) {
             this.data = data;
             this.next = null;
         }
     }
+
     public static Node head;
     public static Node tail;
+    public static int size;
 
     public static void addFirst(int data) {
         Node newNode = new Node(data);
         if (head == null) {
+            head = tail = newNode;
+        } else {
+            newNode.next = head;
             head = newNode;
-            return;
         }
-        newNode.next = head;
-        head = newNode;
     }
+
     public static void addLast(int data) {
         Node newNode = new Node(data);
         if (head == null) {
-            head = newNode;
-            return;
+            head = tail = newNode;
+        } else {
+            tail.next = newNode;
+            tail = newNode;
         }
-        Node temp = head;
-        while (temp.next != null) {
-            temp = temp.next;
-        }
-        temp.next = newNode;
     }
 
+    // mergesort
+    public static Node mergeSort(Node head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        // find the mid
+        Node mid = getMid(head);
+        Node rightHead = mid.next;
+        mid.next = null;
+        Node newLeft = mergeSort(head);
+        Node newRight = mergeSort(rightHead);
+        // merge
+        return merge(newLeft, newRight);
+    }
 
-
-    public Node getMid(Node head) {
-        if(head == null) return null;
+    // getMid
+    public static Node getMid(Node head) {
         Node slow = head;
-        Node fast = head;
+        Node fast = head.next; // Change here
         while (fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;
@@ -50,20 +61,20 @@ public class LL_mergeSort {
         return slow;
     }
 
-    private Node merge(Node head1, Node head2) {
+    // merge
+    public static Node merge(Node head1, Node head2) {
         Node mergeLL = new Node(-1);
         Node temp = mergeLL;
+
         while (head1 != null && head2 != null) {
             if (head1.data <= head2.data) {
                 temp.next = head1;
                 head1 = head1.next;
-                temp = temp.next;
             } else {
                 temp.next = head2;
                 head2 = head2.next;
-                temp = temp.next;
             }
-            // temp = temp.next;
+            temp = temp.next;
         }
         while (head1 != null) {
             temp.next = head1;
@@ -75,32 +86,29 @@ public class LL_mergeSort {
             head2 = head2.next;
             temp = temp.next;
         }
+
         return mergeLL.next;
     }
 
-    public Node mergeSort(Node head) {
-        // Base case
-        if (head == null || head.next == null) {
-            return head;
+    public static void print(Node head) {
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.data + "->");
+            temp = temp.next;
         }
-        // find the mid
-        Node mid = getMid(head);
-        // Perfom the left and right mergeSort
-        Node RightHead = mid.next;
-        mid.next = null;
-        Node newLeft = mergeSort(head);
-        Node newRight = mergeSort(RightHead);
-        // Merge by using the temp
-        return merge(newLeft, newRight);
+        System.out.println("null");
     }
 
     public static void main(String[] args) {
-        LL_mergeSort ll = new LL_mergeSort();
-        ll.addFirst(10);
-        ll.addFirst(20);
-        ll.addLast(50);
-        ll.addLast(40);
-        ll.addFirst(30);
-    
+        LL_mergeSort list = new LL_mergeSort();
+        list.addFirst(10);
+        list.addFirst(20);
+        list.addFirst(40);
+        list.addFirst(30);
+        list.addFirst(50);
+        list.print(list.head);
+        list.head = list.mergeSort(list.head);
+        list.print(list.head);
+
     }
 }
