@@ -58,6 +58,8 @@ public class removNthNodeFromEnd {
         }
         Prev.next = Prev.next.next;
     }
+
+    
     //-----------------------------------------------------------------------
     //finding the linkedlist is pallindrome or not
     // using the slowFast concept to find the mid of the linkedlist
