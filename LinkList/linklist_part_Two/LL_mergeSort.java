@@ -1,6 +1,12 @@
 package LinkList.linklist_part_Two;
 
+<<<<<<< HEAD
 class LL_mergeSort {
+=======
+import java.util.LinkedList;
+
+public class LL_mergeSort {
+>>>>>>> 4fd615e32ba12d905646fcd562e5c0386375aa85
     static class Node {
         int data;
         Node next;
@@ -100,6 +106,7 @@ class LL_mergeSort {
     }
 
     public static void main(String[] args) {
+<<<<<<< HEAD
         LL_mergeSort list = new LL_mergeSort();
         list.addFirst(10);
         list.addFirst(20);
@@ -110,5 +117,15 @@ class LL_mergeSort {
         list.head = list.mergeSort(list.head);
         list.print(list.head);
 
+=======
+        LL_mergeSort ll = new LL_mergeSort();
+        ll.addFirst(10);
+        ll.addFirst(20);
+        ll.addLast(50);
+        ll.addLast(40);
+        ll.addFirst(30);
+        ll.head = ll.mergeSort(ll.head);
+    
+>>>>>>> 4fd615e32ba12d905646fcd562e5c0386375aa85
     }
 }

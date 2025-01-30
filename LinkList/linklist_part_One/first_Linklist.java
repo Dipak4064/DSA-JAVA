@@ -27,7 +27,7 @@ public class first_Linklist {
             return;
         }
         // step 3:newNode next should point to head
-        head.next = newNode;
+        newNode.next = head;
         // step 4: update the head
         head = newNode;
     }
@@ -147,18 +147,18 @@ public class first_Linklist {
 
     public static void main(String[] args) {
         first_Linklist ll = new first_Linklist();
-        ll.print();
+        // ll.print();
         ll.addFirst(2);
-        ll.print();
+        // ll.print();
 
         ll.addFirst(3);
-        ll.print();
+        // ll.print();
 
         ll.addLast(4);
-        ll.print();
+        // ll.print();
 
         ll.addLast(5);
-        ll.print();
+        // ll.print();
 
         // adding the element 9 at index 2
         ll.add(9, 2);
