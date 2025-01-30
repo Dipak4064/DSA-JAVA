@@ -10,6 +10,7 @@ class Stack_Stock_Span {
         for (int i = 1; i < stocks.length; i++) {
             int currPrice = stocks[i];
             while (!stack.isEmpty() && stocks[stack.peek()] < currPrice) {
+                // if current price is high then pop the previous price until highest price
                 stack.pop();
             }
             if (stack.isEmpty()) {
@@ -18,7 +19,7 @@ class Stack_Stock_Span {
                 int prevHigh = stack.peek();
                 span[i] = i - prevHigh;
             }
-            s.push(i);
+            stack.push(i);// adding idx to in stack
         }
     }
 
