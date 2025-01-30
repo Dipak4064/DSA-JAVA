@@ -3,7 +3,7 @@ package LinkList.linklist_part_Two;
 import java.util.LinkedList;
 
 public class LL_mergeSort {
-    class Node {
+    static class Node {
         int data;
         Node next;
         
@@ -101,6 +101,7 @@ public class LL_mergeSort {
         ll.addLast(50);
         ll.addLast(40);
         ll.addFirst(30);
+        ll.head = ll.mergeSort(ll.head);
     
     }
 }
