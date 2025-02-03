@@ -4,9 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class LonelyNumber {
-    class Solution {
-    public List<Integer> findLonely(int[] nums) {
+public class lonelyNumber {
+    public static List<Integer> findLonely(int[] nums) {
         HashMap<Integer, Integer> mp = new HashMap<>();
         int n = nums.length;
         for (int i = 0; i < n; i++) {
@@ -24,6 +23,9 @@ public class LonelyNumber {
         }
         return ans;
     }
-}
 
+    public static void main(String[] args) {
+        int[] nums = { 10, 6, 5, 8 };
+        System.out.println(findLonely(nums));
+    }
 }
