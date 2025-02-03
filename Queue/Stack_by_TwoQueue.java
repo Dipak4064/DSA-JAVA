@@ -81,10 +81,10 @@ public class Stack_by_TwoQueue {
         s.push(10);
         s.push(20);
         s.push(30);
-        while(!s.isEmpty()){
+        while (!s.isEmpty()) {
             System.out.println(s.peek());
             s.pop();
-                }
+        }
 
     }
 }
