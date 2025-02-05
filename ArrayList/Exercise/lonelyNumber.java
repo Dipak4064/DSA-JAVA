@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class lonelyNumber {
+public class LonelyNumber {
     public static List<Integer> findLonely(int[] nums) {
         HashMap<Integer, Integer> mp = new HashMap<>();
         int n = nums.length;
