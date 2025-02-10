@@ -11,7 +11,8 @@ public class Queue_by_TwoStack {
             return s1.isEmpty();
         }
 
-        // add: O(n), remove: O(1), peek: O(1)
+        // add:
+        // O(n), remove: O(1), peek: O(1)
         public static void add(int data) {
             while (!s1.isEmpty()) {
                 s2.push(s1.pop());
@@ -48,7 +49,7 @@ public class Queue_by_TwoStack {
         q.add(10);
         q.add(20);
         q.add(30);
-        while(!q.isEmpty()){
+        while (!q.isEmpty()) {
             System.out.println(q.peek() + " -> ");
             q.remove();
         }

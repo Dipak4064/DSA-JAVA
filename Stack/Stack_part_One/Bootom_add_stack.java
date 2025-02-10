@@ -3,6 +3,8 @@ package Stack.Stack_part_One;
 import java.util.Stack;
 
 public class Bootom_add_stack {
+
+    //Adding the number in the bottom of the stack
     public static void pushAtBottom(Stack<Integer> stack, int data) {
         if (stack.isEmpty()) {
             stack.push(data);
