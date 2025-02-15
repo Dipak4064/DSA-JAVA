@@ -1,4 +1,4 @@
-public class searchInBinaryTree {
+public class BST {
     static class Node {
         int data;
         Node left, right;
@@ -54,6 +54,16 @@ public class searchInBinaryTree {
             root.right = deleteNode(root.right, root.data);
         }
         return root;
+    }
+
+    // Find the minimum value in the tree
+    public static int minValue(Node root) {
+        int minValue = root.data;
+        while (root.left != null) {
+            root = root.left;
+            minValue = root.data;
+        }
+        return minValue;
     }
 
     public static void main(String[] args) {
